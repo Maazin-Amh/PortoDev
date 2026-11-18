@@ -60,7 +60,7 @@ export default function Home() {
       <main className="text-white">
         <div className="relative hidden md:flex min-h-screen flex-col items-center justify-center gap-4 overflow-hidden">
           <div className="w-full ">
-            <DotLottieReact src="/animasi/hello.lottie" autoplay loop={true} />
+            <DotLottieReact src="/animasi/Hello.lottie" autoplay loop={true} />
           </div>
           <span className="absolute bottom-20 flex flex-col items-center gap-3 text-lg font-bold md:bottom-24 md:text-2xl">
             Scroll To Down
