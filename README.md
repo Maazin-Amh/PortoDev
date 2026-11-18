@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+PortoDev — Personal Portfolio
 
-## Getting Started
+A personal portfolio website built with Next.js, designed to showcase my profile, skills, projects, work experience, and certifications as an IT student and aspiring Web Developer.
 
-First, run the development server:
+Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+PortoDev is a personal portfolio website that serves as a platform to introduce myself, showcase my technical abilities, and document my journey in the world of technology and software development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website features a clean, modern, and responsive interface with interactive animations to provide a comfortable browsing experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+About Me — Personal introduction and background.
 
-## Learn More
+Skills & Technologies — Showcase of technical skills and development tools.
 
-To learn more about Next.js, take a look at the following resources:
+Projects — Collection of personal, academic, and professional projects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Experience — Work experience and professional activities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Certificates — Display of certifications and achievements.
 
-## Deploy on Vercel
+Responsive Design — Optimized for desktop, tablet, and mobile devices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Interactive Animations — Smooth transitions and scrolling effects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tech Stack
+
+Technology
+
+Description
+
+Next.js
+
+React framework
+
+React.js
+
+User interface library
+
+TypeScript
+
+Type-safe JavaScript
+
+Tailwind CSS
+
+Utility-first CSS framework
+
+Framer Motion
+
+Animations and transitions
