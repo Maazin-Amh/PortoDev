@@ -231,7 +231,7 @@ export default function Home() {
                           />
                           <Skill name="C++" icon="/assets/C++.png" />
                           <Skill name="Flutter" icon="/assets/Flutter.png" />
-                          <Skill name="TS" icon="/assets/Typescript.png" />
+                          <Skill name="TS" icon="/assets/TypeScript.png" />
                           <Skill name="React" icon="/assets/React.png" />
                           <Skill name="NextJS" icon="/assets/Nextjs.png" />
                           <Skill name="NestJS" icon="/assets/Nestjs.png" />
@@ -261,16 +261,11 @@ export default function Home() {
 
                       {skillTab === "tools" && (
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                          <Skill
-                            name="Antigravity IDE"
-                            icon="/assets/ide.png"
-                          />
-                          <Skill
-                            name="GitHub & Git"
-                            icon="/assets/Github.png"
-                          />
-                          <Skill name="Postman" icon="/assets/Postman.png" />
-                          <Skill name="Xcode" icon="/assets/Xcode.png" />
+                          <Skill name="Antigravity IDE" />
+                          <Skill name="Git" />
+                          <Skill name="Bruno" />
+                          <Skill name="Postman" />
+                          <Skill name="Xcode" />
                         </div>
                       )}
                     </motion.div>

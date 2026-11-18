@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
-/* Hide scrollbar for skill tabs on mobile */
+
 .scrollbar-none {
   -ms-overflow-style: none;
   scrollbar-width: none;

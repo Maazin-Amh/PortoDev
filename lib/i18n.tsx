@@ -45,8 +45,8 @@ const translations = {
     id: "Bahasa & Framework",
   },
   dbTools: {
-    en: "Database & Tools",
-    id: "Database & Tools",
+    en: "Database & Database Tools",
+    id: "Database & Database Tools",
   },
   devConcepts: {
     en: "Dev Concepts",
