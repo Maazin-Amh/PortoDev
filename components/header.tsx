@@ -1,4 +1,3 @@
-
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
@@ -70,7 +69,7 @@ export default function Header() {
         {
           threshold: 0,
           rootMargin: "-40% 0px -40% 0px",
-        }
+        },
       );
 
       observer.observe(element);
@@ -84,7 +83,7 @@ export default function Header() {
 
   return (
     <header className="fixed bottom-0 left-0 z-50 w-full px-3 pb-3 sm:px-6 sm:pb-4 md:px-10 lg:px-12">
-      <nav className="mx-auto flex h-14 max-w-[1400px] items-center justify-between gap-2 sm:h-16 sm:gap-4">
+      <nav className="mx-auto flex h-14 max-w-[1400px] items-center justify-center md:justify-between gap-2 sm:h-16 sm:gap-4">
         <Button
           style={{
             width: "clamp(40px, 5vw, 64px)",
@@ -103,7 +102,6 @@ export default function Header() {
         </Button>
 
         <div className="flex min-w-0 items-center gap-2 sm:gap-4 md:gap-6">
-
           <div className="min-w-0">
             <TabBar
               aria-label="Portfolio Navigation"
@@ -124,7 +122,6 @@ export default function Header() {
               items={socialItems}
             />
           </div>
-
         </div>
       </nav>
     </header>

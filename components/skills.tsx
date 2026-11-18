@@ -12,11 +12,11 @@ export default function Skill({ name, icon }: SkillProps) {
         <img
           src={icon}
           alt={name}
-          className="h-6 w-6 shrink-0 object-contain sm:h-8 sm:w-8"
+          className="h-8 w-8 md:h-6 md:w-6 shrink-0 object-contain sm:h-8 sm:w-8"
         />
       )}
 
-      <span className="text-xs font-medium sm:text-sm md:text-base">
+      <span className="text-sm font-semibold md:font-medium sm:text-sm md:text-base">
         {name}
       </span>
     </div>
