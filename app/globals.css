@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/* Hide scrollbar for skill tabs on mobile */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-up .lg-menu-card {
+  top: auto !important;
+  bottom: 0 !important;
+  transform-origin: calc(100% - 20px) calc(100% - 20px) !important;
+}
+.menu-up .lg-menu-card[data-align="start"] {
+  transform-origin: 20px calc(100% - 20px) !important;
+}
+
+.menu-up .lg-menu-surface,
+.menu-up .lg-menu-glyph {
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+
+.menu-up .lg-menu-content {
+  transform-origin: calc(100% - 20px) calc(100% - 20px) !important;
+  clip-path: none !important;
+}
+.menu-up .lg-menu-card[data-align="start"] .lg-menu-content {
+  transform-origin: 20px calc(100% - 20px) !important;
+}
