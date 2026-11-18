@@ -5,6 +5,9 @@ import Header from "@/components/header";
 import Project from "@/components/projects";
 import Skill from "@/components/skills";
 import { useLang } from "@/lib/i18n";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -55,19 +58,29 @@ export default function Home() {
       <Header />
 
       <main className="text-white">
+        <div className="relative hidden md:flex min-h-screen flex-col items-center justify-center gap-4 overflow-hidden">
+          <div className="w-full ">
+            <DotLottieReact src="/animasi/hello.lottie" autoplay loop={true} />
+          </div>
+
+          <span className="absolute bottom-20 flex flex-col items-center gap-3 text-lg font-bold md:bottom-24 md:text-2xl">
+            Scroll To Down
+            <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
+          </span>
+        </div>
         <section className="flex min-h-screen items-center justify-center overflow-hidden px-4 sm:px-6">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-4 text-xl font-bold uppercase sm:mb-6 sm:text-2xl md:text-3xl">
               Ariiq Maazin H
             </p>
 
-            <h1 className="text-4xl font-bold sm:text-6xl md:text-8xl">
+            <span className="flex items-center justify-center gap-2 text-4xl font-bold sm:text-6xl md:text-8xl">
               Full-Stack
               <br />
-              <span className="text-maroon">Developer</span>
-            </h1>
+              <span className="bg-maroon">Developer</span>
+            </span>
 
-            <p className="mx-auto mt-6 max-w-xl text-xs leading-relaxed text-gray-400 sm:mt-8 sm:text-sm md:text-base">
+            <p className="mx-auto mt-6  text-xs leading-relaxed text-gray-400 sm:mt-8 sm:text-sm md:text-base">
               {t("heroDescription")}
             </p>
 

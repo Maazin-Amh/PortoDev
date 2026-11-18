@@ -79,7 +79,7 @@ export default function Header() {
 
   return (
     <header className="fixed bottom-0 left-0 z-50 w-full px-3 pb-3 sm:px-6 sm:pb-4 md:px-10 lg:px-12">
-      <nav className="mx-auto flex h-14 max-w-[1400px] items-center justify-center gap-2 sm:h-16 sm:gap-4 md:justify-between">
+      <nav className="mx-auto flex h-14 max-w-[1400px] items-center  gap-2 sm:h-16 sm:gap-4 justify-between">
         <Button
           style={{
             width: "clamp(40px, 5vw, 64px)",
@@ -96,8 +96,7 @@ export default function Header() {
             className="h-full w-full rounded-full object-cover"
           />
         </Button>
-
-        <div className="flex min-w-0 items-center gap-2 sm:gap-4 md:gap-6">
+        <div className="hidden md:flex min-w-0 items-center gap-2 sm:gap-4 md:gap-6">
           <div className="min-w-0">
             <TabBar
               aria-label="Portfolio Navigation"
@@ -110,10 +109,29 @@ export default function Header() {
               onValueChange={handleTabChange}
             />
           </div>
-
           <div className="shrink-0">
             <Menu className="menu-up" aria-label="Menu" items={menuItems} />
           </div>
+        </div>
+
+        <div className="flex md:hidden min-w-0 items-center gap-2 sm:gap-4 md:gap-6">
+          <div className="min-w-0">
+            <TabBar
+              aria-label="Portfolio Navigation"
+              items={[
+                { value: "Project", label: t("navProject") },
+                { value: "Skill", label: t("navSkill") },
+                { value: "Experience", label: t("navExperience") },
+              ]}
+              value={tab}
+              onValueChange={handleTabChange}
+            />
+          </div>
+          <div className="shrink-0"></div>
+        </div>
+
+        <div className="block md:hidden">
+          <Menu className="menu-up" aria-label="Menu" items={menuItems} />
         </div>
       </nav>
     </header>
