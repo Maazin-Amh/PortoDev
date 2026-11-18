@@ -62,7 +62,6 @@ export default function Home() {
           <div className="w-full ">
             <DotLottieReact src="/animasi/hello.lottie" autoplay loop={true} />
           </div>
-
           <span className="absolute bottom-20 flex flex-col items-center gap-3 text-lg font-bold md:bottom-24 md:text-2xl">
             Scroll To Down
             <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
