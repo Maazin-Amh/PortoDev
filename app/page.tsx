@@ -4,12 +4,14 @@ import Experience from "@/components/experien";
 import Header from "@/components/header";
 import Project from "@/components/projects";
 import Skill from "@/components/skills";
+import { useLang } from "@/lib/i18n";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [active, setActive] = useState(0);
   const [skillTab, setSkillTab] = useState("Languages-&-Frameworks");
+  const { t } = useLang();
 
   useEffect(() => {
     const projects = document.getElementById("trigger-projects");
@@ -66,13 +68,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-xs leading-relaxed text-gray-400 sm:mt-8 sm:text-sm md:text-base">
-              I am a Full Stack Developer passionate about building modern,
-              responsive, and scalable web applications. I actively participate
-              in developer communities, including DevFest, to expand my
-              knowledge, connect with fellow developers, and stay updated with
-              the latest technologies. I continuously explore new tools and
-              technologies while developing projects to enhance my skills and
-              experience.
+              {t("heroDescription")}
             </p>
 
             <div className="mt-8 sm:mt-10">
@@ -82,7 +78,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 rounded-full bg-putihsusu px-5 py-3 text-sm font-semibold text-black transition hover:-translate-y-1 hover:bg-maroon hover:text-white sm:gap-3 sm:px-7 sm:py-4 sm:text-base"
               >
                 <i className="fa-solid fa-download" />
-                Download CV
+                {t("downloadCv")}
               </a>
             </div>
           </div>
@@ -93,9 +89,9 @@ export default function Home() {
             <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-3 md:grid md:grid-cols-[180px_1fr] md:items-center md:gap-16">
               <div className="flex w-full shrink-0 items-center justify-center pt-2 md:w-auto md:pt-0">
                 <h1 className="whitespace-nowrap text-3xl font-black tracking-tighter text-putihsusu sm:text-4xl md:-rotate-90 md:text-8xl">
-                  {active === 0 && "PROJECTS"}
-                  {active === 1 && "SKILLS"}
-                  {active === 2 && "EXPERIENCE"}
+                  {active === 0 && t("projects")}
+                  {active === 1 && t("skills")}
+                  {active === 2 && t("experience")}
                 </h1>
               </div>
 
@@ -109,31 +105,31 @@ export default function Home() {
                       exit={{ opacity: 0, y: -50 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
+                      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <Project
                           title="Information Technology 25"
-                          description="Information center website for information technology students, class of 25"
+                          description={t("projectIT25Desc")}
                           link="https://information-technology-25-official.com/"
                           bahasa={["NextJS", "Firebase", "Typescript"]}
                         />
 
                         <Project
                           title="Lopercourse"
-                          description="Course online website buy, learning and meeting is under development"
+                          description={t("projectLopercourseDesc")}
                           link="https://github.com/Maazin-Amh/Lopercourse"
                           bahasa={["React", "JavaScript"]}
                         />
 
                         <Project
                           title="Shop App"
-                          description="Online shopping app that works like ikea app"
+                          description={t("projectShopAppDesc")}
                           link="https://github.com/Maazin-Amh/shop-app"
                           bahasa={["Flutter", "Dart", "Firebase"]}
                         />
 
                         <Project
                           title="Classroom"
-                          description="Classroom website that is equipped with backend"
+                          description={t("projectClassroomDesc")}
                           link="https://github.com/Maazin-Amh/FE_CLASSROOM_APP"
                           bahasa={[
                             "NextJS",
@@ -145,7 +141,7 @@ export default function Home() {
                         />
                         <Project
                           title="Color Detector"
-                          description="A feature that detects a color via the camera which directly connects to the figma app"
+                          description={t("projectColorDetectorDesc")}
                           link="https://github.com/Maazin-Amh/deteksi-warna"
                           bahasa={["Python", "Plugin Figma"]}
                         />
@@ -157,7 +153,7 @@ export default function Home() {
                         rel="noreferrer"
                         className="mt-6 inline-flex items-center gap-2 text-maroon transition hover:text-white"
                       >
-                        See Full My Repo
+                        {t("seeFullRepo")}
                         <i className="fa-solid fa-arrow-up-right-from-square" />
                       </a>
                     </motion.div>
@@ -180,7 +176,7 @@ export default function Home() {
                               : "text-gray-500 hover:text-white"
                           }`}
                         >
-                          Languages & Frameworks
+                          {t("langFrameworks")}
                         </button>
                         <button
                           onClick={() => setSkillTab("Database")}
@@ -190,7 +186,7 @@ export default function Home() {
                               : "text-gray-500 hover:text-white"
                           }`}
                         >
-                          Database & Tools
+                          {t("dbTools")}
                         </button>
                         <button
                           onClick={() => setSkillTab("Development_Concepts")}
@@ -200,7 +196,7 @@ export default function Home() {
                               : "text-gray-500 hover:text-white"
                           }`}
                         >
-                          Dev Concepts
+                          {t("devConcepts")}
                         </button>
                         <button
                           onClick={() => setSkillTab("tools")}
@@ -210,7 +206,7 @@ export default function Home() {
                               : "text-gray-500 hover:text-white"
                           }`}
                         >
-                          Tools
+                          {t("tools")}
                         </button>
                       </div>
 
@@ -278,11 +274,11 @@ export default function Home() {
                     >
                       <div className="space-y-2">
                         <Experience
-                          jabatan="IT Support & Full-Stack Developer"
-                          range="January 2025 - April 2025"
+                          jabatan={t("expJobTitle")}
+                          range={t("expRange")}
                           nama_perusahaan="PT FSCM Manufacturing Indonesia"
-                          lokasi="Bogor, West Java, Indonesia"
-                          desk="Worked as an IT Support and Full-Stack Developer at an Astra-affiliated company for a three-month industrial internship. Developed a company suggestion system website to make submitting suggestions and accessing company facilities and infrastructure easier."
+                          lokasi={t("expLocation")}
+                          desk={t("expDescription")}
                         />
                       </div>
                     </motion.div>
