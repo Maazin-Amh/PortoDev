@@ -55,7 +55,9 @@ export default function Home() {
       <main className="text-white">
         <section className="flex min-h-screen items-center justify-center overflow-hidden px-4 sm:px-6">
           <div className="mx-auto max-w-5xl text-center">
-            <p className="mb-4 text-xl font-bold uppercase sm:mb-6 sm:text-2xl md:text-3xl">Ariiq Maazin H</p>
+            <p className="mb-4 text-xl font-bold uppercase sm:mb-6 sm:text-2xl md:text-3xl">
+              Ariiq Maazin H
+            </p>
 
             <h1 className="text-4xl font-bold sm:text-6xl md:text-8xl">
               Full-Stack
@@ -107,7 +109,7 @@ export default function Home() {
                       exit={{ opacity: 0, y: -50 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                      <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
                         <Project
                           title="Information Technology 25"
                           description="Information center website for information technology students, class of 25"
@@ -213,7 +215,7 @@ export default function Home() {
                       </div>
 
                       {skillTab === "Languages-&-Frameworks" && (
-                        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                           <Skill name="Go" icon="/assets/Go.png" />
                           <Skill
                             name="JavaScript"
@@ -228,7 +230,7 @@ export default function Home() {
                         </div>
                       )}
                       {skillTab === "Database" && (
-                        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                           <Skill name="MySQL" icon="/assets/MySQL.png" />
                           <Skill
                             name="Firebase Firestore"
@@ -239,7 +241,7 @@ export default function Home() {
                       )}
 
                       {skillTab === "Development_Concepts" && (
-                        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                           <Skill name="REST API" />
                           <Skill name="CRUD Operations" />
                           <Skill name="Object-Oriented Programming (OOP)" />
@@ -250,7 +252,7 @@ export default function Home() {
                       )}
 
                       {skillTab === "tools" && (
-                        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                           <Skill
                             name="Antigravity IDE"
                             icon="/assets/ide.png"
