@@ -14,6 +14,11 @@ const translations = {
     id: "Unduh CV",
   },
 
+  isiCV: {
+    en: "/doc/Cv_Ariiqmaazin_eng.pdf",
+    id: "/doc/Cv_Ariiqmaazin_ind.pdf",
+  },
+
   projects: {
     en: "PROJECTS",
     id: "PROYEK",
@@ -70,16 +75,16 @@ const translations = {
     id: "Aplikasi belanja online yang bekerja seperti aplikasi IKEA",
   },
   projectClassroomDesc: {
-    en: "Classroom website that is equipped with backend",
-    id: "Website kelas yang dilengkapi dengan backend",
+    en: "A free online education website for everyone, making it easy for students and teachers to conduct online learning.",
+    id: "Web berbasis edukasi online gratis untuk semua kalangan. Yang memudahkan siswa dan guru untuk melakukan secara pembelajaran online atau daring.",
   },
   projectColorDetectorDesc: {
     en: "A feature that detects a color via the camera which directly connects to the figma app",
     id: "Fitur yang mendeteksi warna melalui kamera yang terhubung langsung ke aplikasi Figma",
   },
   seeFullRepo: {
-    en: "See Full My Repo",
-    id: "Lihat Repo Lengkap",
+    en: "View All Repositories",
+    id: "Lihat Semua Repositori",
   },
 
   expJobTitle: {

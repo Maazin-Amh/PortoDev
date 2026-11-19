@@ -58,15 +58,6 @@ export default function Home() {
       <Header />
 
       <main className="text-white">
-        <div className="relative hidden md:flex min-h-screen flex-col items-center justify-center gap-4 overflow-hidden">
-          <div className="w-full ">
-            <DotLottieReact src="/animasi/Hello.lottie" autoplay loop={true} />
-          </div>
-          <span className="absolute bottom-20 flex flex-col items-center gap-3 text-lg font-bold md:bottom-24 md:text-2xl">
-            Scroll To Down
-            <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
-          </span>
-        </div>
         <section className="flex min-h-screen items-center justify-center overflow-hidden px-4 sm:px-6">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-4 text-xl font-bold uppercase sm:mb-6 sm:text-2xl md:text-3xl">
@@ -85,7 +76,7 @@ export default function Home() {
 
             <div className="mt-8 sm:mt-10">
               <a
-                href="/Cv_Ariiqmaazin.pdf"
+                href={t("isiCV")}
                 download="CV-Ariiq-Maazin-H.pdf"
                 className="inline-flex items-center gap-2 rounded-full bg-putihsusu px-5 py-3 text-sm font-semibold text-black transition hover:-translate-y-1 hover:bg-maroon hover:text-white sm:gap-3 sm:px-7 sm:py-4 sm:text-base"
               >
@@ -122,7 +113,12 @@ export default function Home() {
                           title="Information Technology 25"
                           description={t("projectIT25Desc")}
                           link="https://information-technology-25-official.com/"
-                          bahasa={["NextJS", "Firebase", "Typescript"]}
+                          bahasa={[
+                            "NextJS",
+                            "Firebase",
+                            "Cloudinary",
+                            "Typescript",
+                          ]}
                         />
 
                         <Project
@@ -142,11 +138,12 @@ export default function Home() {
                         <Project
                           title="Classroom"
                           description={t("projectClassroomDesc")}
-                          link="https://github.com/Maazin-Amh/FE_CLASSROOM_APP"
+                          link="https://fe-classroom-app.vercel.app/"
                           bahasa={[
                             "NextJS",
                             "Aiven",
                             "Typescript",
+                            "Cloudinary",
                             "NextJS",
                             "SQL",
                           ]}
@@ -155,7 +152,7 @@ export default function Home() {
                           title="Color Detector"
                           description={t("projectColorDetectorDesc")}
                           link="https://github.com/Maazin-Amh/deteksi-warna"
-                          bahasa={["Python", "Plugin Figma"]}
+                          bahasa={["Python", "Figma"]}
                         />
                       </div>
 

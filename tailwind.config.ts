@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         hitamdov: "#26282B",
         putihsusu: "#F4EEE0",
-        maroon: "#B93636",
+        maroon: "#E03F4F",
       },
     },
   },
